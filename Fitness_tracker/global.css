@@ -1,0 +1,127 @@
+/* Global Styling with Smooth Transitions */
+body {
+    font-family: "Poppins", sans-serif;
+    background: url('background.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    padding-top: 80px; /* Push content below navbar */
+    position: relative;
+    opacity: 0; /* Start hidden for transition effect */
+    animation: fadeIn 0.8s ease-in-out forwards; /* Smooth fade-in effect */
+}
+
+/* Dark Overlay */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.8) !important;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+    color: #f8b400 !important;
+    transform: scale(1.1);
+}
+
+/* Headers */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Container Styling */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Cards */
+.card {
+    background: rgba(0, 0, 0, 0.7) !important;
+    color: white;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Buttons */
+.btn {
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: rgba(255, 255, 255, 0.4);
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Smooth Page Load Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Page Transition Effect */
+a {
+    transition: all 0.4s ease-in-out;
+}
+
+a:hover {
+    transform: scale(1.05);
+}
+
+/* Smooth Page Transition on Click */
+.page-transition {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.page-transition.active {
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto;
+}

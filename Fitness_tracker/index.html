@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker | Home</title>
+
+    <!-- Bootstrap & Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" ><b>FITNESS TRACKER</b> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="create-routine.html">Create Routine</a></li>
+                    <li class="nav-item"><a class="nav-link" href="my-routines.html">My Routines</a></li>
+                    <li class="nav-item"><a class="nav-link" href="progress.html">Progress Tracker</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Video -->
+    <header class="hero">
+        <video autoplay loop muted playsinline class="bg-video">
+            <source src="bg1.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <div class="container text-center text-white">
+                <h1 class="display-4">Track Your Workouts & Stay Fit!</h1>
+                <p class="lead">Plan your routines and track calories burned with ease.</p>
+                <a href="create-routine.html" class="btn btn-primary btn-lg">Start Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section with Hover Effects -->
+    <div class="container mt-5">
+        <h2 class="text-center" >Our Services</h2>
+        <div class="row mt-4">
+            <!-- Progress Tracker -->
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="tracker.jpg" alt="Progress Tracker" >
+                    <div class="service-overlay">
+                        
+                        <h5 >Progress Tracker</h5>
+                        <p>Track your calories burned, workout history, and performance insights.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Routine Creator -->
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="creator.jpg" alt="Routine Creator">
+                    <div class="service-overlay">
+                        <h5>Routine Creator</h5>
+                        <p>Plan and organize your workout routines for better consistency.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Workout Insights -->
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="insights.jpg" alt="Workout Insights">
+                    <div class="service-overlay">
+                        <h5>Workout Insights</h5>
+                        <p>Analyze your progress and make smarter fitness decisions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2025 Fitness Tracker. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
