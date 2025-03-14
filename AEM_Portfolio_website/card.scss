@@ -1,0 +1,61 @@
+/* Book Card Container */
+.cmp-teaser--book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black; /* Black Border */
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    margin: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.cmp-teaser--book:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Book Image Styling */
+.cmp-teaser--book .cmp-teaser__image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Book Title Styling */
+.cmp-teaser--book .cmp-teaser__title {
+    margin-top: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Book Author and Price Styling */
+.cmp-teaser--book .cmp-teaser__author,
+.cmp-teaser--book .cmp-teaser__price {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 4px;
+}
+
+/* Button Styling */
+.cmp-teaser--book .cmp-teaser__button {
+    margin-top: 10px;
+    padding: 5px 12px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.cmp-teaser--book .cmp-teaser__button:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}

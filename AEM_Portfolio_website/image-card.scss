@@ -1,0 +1,49 @@
+/* Image Component Container */
+.cmp-image--book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    margin: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.cmp-image--book:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Styling */
+.cmp-image--book .cmp-image__image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+
+/* Hover Effect on Image */
+.cmp-image--book:hover .cmp-image__image {
+    transform: scale(1.05);
+}
+
+/* Book Title Styling */
+.cmp-image--book .cmp-image__title {
+    margin-top: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Book Price Styling */
+.cmp-image--book .cmp-image__price {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 4px;
+}

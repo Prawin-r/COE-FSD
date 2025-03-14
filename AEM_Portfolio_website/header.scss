@@ -1,0 +1,50 @@
+
+.cmp-header {
+    background-color: white;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-bottom: 10px; /* Adds some spacing below header */
+        border-bottom: 3px solid #808080; /* Base line */
+        box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.5); /* 3D Effect */
+}
+
+/* Author Name & Subtext Styling */
+.cmp-header__title {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.cmp-header__subtext {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navigation Button Styling */
+.cmp-header__button {
+    background-color: transparent; /* Removes the box background */
+    font-family: 'Arial', sans-serif;
+    color: black;
+    border: none; /* Removes border */
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+    padding: 0; /* Remove padding */
+    margin: 0 15px; /* Adds space between buttons */
+}
+
+.cmp-header__button a {
+    color: black; /* Text color for normal state */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cmp-header__button:hover a {
+    color: grey; /* Changes text color on hover */
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+
